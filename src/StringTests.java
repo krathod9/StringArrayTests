@@ -1,8 +1,8 @@
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Stack;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StringTests {
 
@@ -137,7 +137,52 @@ public class StringTests {
         }
     }
 
-    public static void sortString(String str){
+    public static void reverseStringWOFunctions(String str){
+        for(int i=str.length()-1;i>=0;i--){
+            System.out.print(str.charAt(i));
+        }
+    }
 
+    public static void sortStringWOFuntion(String str){
+        char temp;
+        char[] c=str.toCharArray();
+        //Arrays.sort(c); alternative approach
+        for(int i=0;i<c.length-1;i++){
+            for(int j=i;j<c.length;j++){
+                if(c[i]>c[j]){
+                    temp=c[i];
+                    c[i]=c[j];
+                    c[j]=temp;
+                }
+            }
+        }
+        System.out.println(c);
+    }
+
+    public static void checkPanagramString(String str){
+        str=str.toLowerCase();
+        List<Character> characters=new ArrayList<Character>();
+         if(str.length()<26) System.out.println("Not a panagram");
+        else{
+            for(int i=0;i<str.length();i++){
+                boolean present=false;
+                if(!characters.contains(str.charAt(i)))
+                    characters.add(str.charAt(i));
+            }
+            if(characters.size()==26){
+                System.out.println("Panagram string");
+            }
+            else{
+                System.out.println("Not a panagram string");
+            }
+        }
+    }
+
+    public static void patternCheck(String str){
+        Pattern pattern= Pattern.compile("[a-zA-Z]\\b");
+        Matcher matcher=pattern.matcher(str);
+        while(matcher.find()){
+            System.out.print(matcher.group());
+        }
     }
 }

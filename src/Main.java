@@ -9,9 +9,14 @@ public class Main {
         int[] arr={2,1,2,2,2,0,4,0,0,5,3};
         int[] arr1={2,1,4,5,3,0};
         char x=Integer.toString(123).charAt(0);
+        //BuilderVsBuffer.builderbuffercheck();
         //IntTest.disariumNumber(175);
         //int x1=3;
-        StringTests.stringReverseUsingStack("karan is my name");
+        StringTests.patternCheck("Karan Is My name");
+        // checkPanagramString("aAbcdeghijklmnopqrsftuvwxyzfds");
+                //sortStringWOFuntion("karan  is my name");
+                //sortString("karan is my name");
+        //stringReverseUsingStack("karan is my name");
                 //removeLeadingZero("00023430");
                 //placeCharInBetween("karan",'T',3);
                 //swapchars("karan");
