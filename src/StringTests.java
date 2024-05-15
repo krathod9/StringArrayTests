@@ -1,6 +1,7 @@
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 import java.util.*;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -165,7 +166,6 @@ public class StringTests {
          if(str.length()<26) System.out.println("Not a panagram");
         else{
             for(int i=0;i<str.length();i++){
-                boolean present=false;
                 if(!characters.contains(str.charAt(i)))
                     characters.add(str.charAt(i));
             }

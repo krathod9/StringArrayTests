@@ -1,16 +1,9 @@
-import java.lang.reflect.Array;
-import java.util.*;
+package LTI;
 
 public class Main {
     public static void main(String[] args) {
 
-        String s="karIIon";
-        char[] c=s.toCharArray();
-        int[] arr={2,1,2,2,2,0,4,0,0,5,3};
-        int[] arr1={1,2,3,5,6,5};
-        char x=Integer.toString(123).charAt(0);
-        int[] array1 = {2,3,7,6};
-
+        LTI_L2.substring();
 
         //System.out.println(123);
         //findCharOccurance.findOccurance("SILENLENTS");

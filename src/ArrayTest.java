@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.logging.Logger;
 
 public class ArrayTest {
     public static boolean arrayEquality(int[] array1, int[] array2) {
@@ -7,7 +8,6 @@ public class ArrayTest {
                 if (array1[i] != array2[i]) return false;
             }
         } else return false;
-
         return true;
     }
 
@@ -31,9 +31,7 @@ public class ArrayTest {
             } else if (arr[i] > big2) {
                 big2 = arr[i];
             }
-
         }
-
         return big2;
     }
 
@@ -46,7 +44,6 @@ public class ArrayTest {
         }
         return -1;
     }
-
 
     public static void sumofNumFromArr(int[] arr, int sum) {
         for (int i = 0; i < arr.length - 1; i++) {
@@ -156,12 +153,14 @@ public class ArrayTest {
     public static void repeatedChars(String str) {
         char[] c = str.toCharArray();
         HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+
         for (char x : c) {
             if (hm.containsKey(x)) {
-
+                hm.put(x,hm.get(x)+1);
             }
             hm.put(x, 1);
         }
+        System.out.println(hm.keySet());
     }
 
     public static void arrayRotationRightToLeft(int[] arr, int n) {
@@ -197,6 +196,16 @@ public class ArrayTest {
         }
     }
 
+    public static void reverseStringWordReverse(String str) {
+        String[] str1 = str.split("[\\s]");
+        for (int i = 0; i <str1.length; i++) {
+            char[] c= str1[i].toCharArray();
+            for(int j=c.length-1; j>=0;j--){
+                System.out.print(c[j]);
+            }
+            System.out.print(" ");
+        }
+    }
     public static void substring(String str){
         char[] chars=str.toCharArray();
         for(int i=0;i<str.length();i++){
