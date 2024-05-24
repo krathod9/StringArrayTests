@@ -3,7 +3,7 @@ package LTI;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
+//find longest substring length
 public class LTI_L2 {
     public static void substring(){
         String str="    ";
