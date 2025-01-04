@@ -6,10 +6,11 @@ public class Main {
 
         String s="karIIon";
         char[] c=s.toCharArray();
-        int[] arr={2,1,2,2,2,0,4,0,0,5,3};
+        //int[] arr={2,1,2,2,2,0,4,0,0,5,3};
         int[] arr1={1,2,3,5,6,5};
         char x=Integer.toString(123).charAt(0);
         int[] array1 = {2,3,7,6};
+        int[] arr={-1,2,3,6,0,-4,-7};
 
 
         //System.out.println(123);
@@ -19,9 +20,10 @@ public class Main {
 
     //findDuplicate(arr);
                 //subArraySum(arr1,11);
-                //findMissing(arr1,4);
-        //removeInteger("abd12nba");
-        //ArrayTest.reverseStringWordReverse("karan is my name");
+//                IntTest.findMissing(arr1,2);
+        IntTest.removeInteger("abd12nba");
+        ArrayTest.sortIntArray(arr);
+        // reverseStringWordReverse("karan is my name");
                 //repeatedChars("karanr");
 //        Singleton singleton= Singleton.getInstance();
 //        Singleton singleton1=Singleton.getInstance();

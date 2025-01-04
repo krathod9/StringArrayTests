@@ -2,8 +2,8 @@ package LTI;
 
 public class Main {
     public static void main(String[] args) {
-
-        LTI_L2.substring();
+int[] arr={-1,2,3,6,0,-4,-7};
+        //LTI_L2.substring();
 
         //System.out.println(123);
         //findCharOccurance.findOccurance("SILENLENTS");
@@ -12,9 +12,10 @@ public class Main {
 
     //findDuplicate(arr);
                 //subArraySum(arr1,11);
-                //findMissing(arr1,4);
+//                findMissing(arr1,4);
         //removeInteger("abd12nba");
-        //ArrayTest.reverseStringWordReverse("karan is my name");
+       // ArrayTest.sortIntArray(arr);
+        // reverseStringWordReverse("karan is my name");
                 //repeatedChars("karanr");
 //        Singleton singleton= Singleton.getInstance();
 //        Singleton singleton1=Singleton.getInstance();
